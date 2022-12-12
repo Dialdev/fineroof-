@@ -1,0 +1,29 @@
+.index-slider {
+	    margin-bottom: 65px;
+		& .slider-controls,
+		& .swiper-pagination {
+			@include phone {
+				display: none;
+			}
+		}
+		& .container {
+			padding: 0;
+		}
+		&__item {
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			justify-content: center;
+			@include phone {
+				display: -webkit-flex;
+				display: -ms-flex;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				& picture,
+				& img {
+					width: 100%;
+				}
+			}
+		}
+}

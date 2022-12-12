@@ -1,0 +1,138 @@
+.card-item {
+	width: calc(100% / 3 - 128px);
+	max-width: 254px;
+
+	text-align: center;
+
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	flex-grow: 1;
+
+
+	cursor: pointer;
+
+	margin: 38px 64px;
+	@include  adaptive(1075) {
+		width: calc(100% / 2 - 60px);
+		max-width: none;
+		margin: 20px 30px;
+		padding: 5px;
+	}
+	@include adaptive(610) {
+		width: 100%;
+		margin: 34px 0;
+	}
+
+	&__image {
+		width: 202px;
+		height: 202px;
+
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		margin-bottom: 7px;
+		@include adaptive(1075) {
+			width: 100%;
+		}
+
+		& img {
+			max-height: 100%;
+
+			object-fit: contain;
+			display: block;
+		}
+	}
+	&__brand {
+		color: #232323;
+		font-size: 17px;
+		font-weight: 500;
+		letter-spacing: 0.42px;
+
+		margin-bottom: 14px;
+	}
+	&__type {
+		color: #1bc09b;
+		font-size: 10px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 7.65px;
+
+		margin-bottom: 31px;
+	}
+	&__props {
+		width: 100%;
+
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		align-items: baseline;
+		justify-content: space-between;
+
+		padding: 0px 22px;
+		&_colors {
+			justify-content: center;
+			flex-wrap: wrap;
+
+			padding: 21px 0px 33px;
+			& svg {
+				width: 21px;
+				height: 31px;
+
+				stroke-width: 1px;
+				stroke: transparent;
+				fill: inherit;
+			}
+		}
+	}
+	&__color {
+		&_white {
+			& svg {
+				stroke: #dddddd;
+				stroke-width: 1px;
+			}
+		}
+		margin: 0px 6px;
+	}
+	&__prop {
+		color: #222222;
+		font-size: 15px;
+		font-weight: 400;
+		line-height: 24px;
+		letter-spacing: 0.38px;
+		&_name {
+			color: #1bc09b;
+		}
+	}
+	&__desc {
+		color: #222222;
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: 0.38px;
+	}
+	&__variables {
+		color: #222222;
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 0.3px;
+
+		margin-top: -5px;
+	}
+	&__top {
+		width: 100%;
+
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-grow: 1;
+
+		margin-bottom: 36px;
+	}
+}

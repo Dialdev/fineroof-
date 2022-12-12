@@ -1,0 +1,14 @@
+.small-item .small-item__img {
+    height: 133px;
+    padding-bottom: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+.small-item .small-item__img img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: contain;
+}

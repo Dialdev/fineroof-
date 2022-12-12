@@ -1,0 +1,155 @@
+.props-table {
+  margin-bottom: 126px;
+	@include phone {
+		margin-bottom: 45px;
+	}
+	& p {
+		font-size: 15px;
+		letter-spacing: 0.38px;
+		color: #232323;
+	}
+	&__tabs {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+  &__sertificates {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+
+    margin: -22px -39px;
+	  @include phone {
+		  margin: -17px 0;
+	  }
+  }
+  &__sertificate {
+    width: calc(100% / 3 - 78px);
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    margin: 22px 39px;
+	  @include adaptive(610) {
+		  width: calc(100% / 2 - 78px);
+	  }
+	  @include phone {
+		  width: 100%;
+		  margin: 17px 0;
+	  }
+  }
+  &__sertificate-name {
+    color: #232323;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.38px;
+
+    margin-top: 30px;
+  }
+  &__image {
+    max-width: 243px;
+    height: 346px;
+
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	  @include adaptive(610) {
+		  max-width: none;
+	  }
+
+    & img {
+      display: block;
+      object-fit: contain;
+    }
+  }
+	&__tab {
+	    padding: 6px 28px;
+		margin: 3px;
+		@include phone {
+			width: 100%;
+		}
+			&:not(.isActive) {
+				color: #a9c0ba;
+
+				border-color: #d7eae5;
+				background: #ffffff;
+			}
+			&.isActive {
+				border-color: #1bc09b;
+			}
+	}
+	&__list {
+		display: none;
+		&.isActive {
+			display: block;
+		}
+	}
+	&__name {
+		font-size: 17px;
+		font-weight: 700;
+		letter-spacing: 0.42px;
+	}
+	&__item {
+		margin-bottom: 41px;
+		& li {
+			font-size: 15px;
+			letter-spacing: 0.38px;
+			color: #232323;
+
+			margin: 8px 0;
+		}
+	}
+	&__desc {
+		padding: 0;
+		padding-left: 18px;
+	}
+	&__links {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		margin-top: 73px;
+		@include adaptive(775) {
+			flex-direction: column;
+			margin-top: 40px;
+		}
+	}
+	&__link {
+		color: #232323;
+		font-size: 17px;
+		font-weight: 700;
+		line-height: 20px;
+
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		align-items: flex-start;
+
+		margin: 0px 34px;
+		@include adaptive(775) {
+			margin: 0px 10px;
+		}
+		& .recolor {
+			color: #1bc09b;
+			display: block;
+		}
+	}
+	&__icon {
+		flex-shrink: 0;
+
+		margin-right: 27px;
+	}
+}

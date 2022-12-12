@@ -1,0 +1,23 @@
+.ajax-pager-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 1s ease-in-out;
+}
+
+.catalog-list__detail.catalog-section {
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+    transition: all .1s ease-in-out;
+}
+
+.catalog-list__detail.catalog-section.isActive {
+    visibility: visible;
+    height: 100%;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}

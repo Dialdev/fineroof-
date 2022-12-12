@@ -1,0 +1,1 @@
+<a href="http://dialweb.ru" target="_blank">Техпотдержка сайта - Digital Agency Dial</a>

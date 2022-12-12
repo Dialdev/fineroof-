@@ -1,0 +1,237 @@
+.content-block {
+	padding-top: 121px;
+	$parent: &;
+	@include phone {
+		overflow: hidden;
+		padding-top: 20px;
+	}
+	&_inner {
+		& #{$parent}__column {
+			display: flex;
+			flex-direction: column;
+			padding-right: 10px;
+		}
+		& #{$parent}__body {
+			max-width: none;
+		}
+		& .custom-subtitle::before {
+			left: -44px;
+		}
+	}
+	&__subtitle {
+		margin-bottom: 64px;
+
+	}
+
+	&__left {
+		width: 311px;
+		height: 371px;
+
+		margin-bottom: auto;
+		margin-top: 21px;
+		@include adaptive (775) {
+			display: none;
+		}
+	}
+	&__svg {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		align-items: center;
+
+		padding-left: 85px;
+		@include phone {
+			padding-left: 149px;
+		}
+	}
+	&__center {
+		width: 526px;
+		height: 509px;
+
+		margin-left: -60px;
+		@include adaptive (775) {
+			width: 228px;
+			height: 237px;
+		}
+	}
+	&__right {
+		width: 230px;
+		height: 100px;
+
+		margin-bottom: auto;
+		margin-top: -50px;
+		margin-left: 109px;
+
+		@include adaptive (775) {
+			width: 103px;
+			height: 44px;
+		}
+		@include phone {
+			margin-top: 0px;
+			margin-left: 40px;
+		}
+
+	}
+	&__body {
+		max-width: 917px;
+		width: 100%;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		margin-top: 20px;
+		@include adaptive (610) {
+			flex-direction: column;
+		}
+		@include phone {
+			margin-top: 10px;
+		}
+		& p {
+			color: #222222;
+			font-size: 17px;
+			line-height: 24px;
+			letter-spacing: 0.42px;
+			margin: 19px 0px;
+			@include phone {
+				font-size: 15px;
+				line-height: 18px;
+			}
+		}
+	}
+	&__column {
+		width: 50%;
+		padding-left: 78px;
+		padding-left: 87px;
+
+		&:last-child {
+			margin-left: 38px;
+			@include adaptive (610) {
+				margin-left: 0;
+			}
+		}
+		@include adaptive (1075) {
+			padding-left: 40px;
+		}
+		@include adaptive (610) {
+			width: 100%;
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+	&__wrap {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__subtitle {
+		margin-left: -35px;
+		@include adaptive (610) {
+			margin-left: 31px;
+		}
+	}
+	&__image {
+		&_mobile {
+			display: none;
+			@include phone {
+				display: block;
+				left: -373px;
+				& svg {
+					width: 665px;
+					height: 295px;
+				}
+			}
+		}
+		&_services {
+			margin-top: 80px;
+			@include adaptive(1075) {
+				width: 204px;
+				height: 206px;
+			}
+			@include phone {
+				margin: 10px auto;
+			}
+		}
+		&_worker {
+			position: absolute;
+			top: 39%;
+			left: -811px;
+			@include adaptive(1075) {
+				top: calc(50% - 53vw);
+				left: -38vw;
+			}
+			@include adaptive(610) {
+				display: none;
+			}
+			& svg {
+				width: 1400px;
+				height: 581px;
+				@include adaptive(1075) {
+					width: 665px;
+					height: 295px;
+				}
+
+			}
+		}
+		&_spiral {
+			margin: auto auto -92px auto ;
+			@include adaptive(775) {
+				display: none;
+			}
+			& svg {
+				width: 63px;
+				height: 310px;
+
+			}
+		}
+	}
+	&__images {
+		&_hammer {
+			margin-right: auto;
+			margin-left: 30px;
+			margin-bottom: 73px;
+			margin-top: -383px;
+			& object {
+				width: 445px;
+				height: 445px;
+			}
+		}
+		@include adaptive (1750) {
+			height: 400px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			& img {
+				display: block;
+				object-fit: contain;
+				max-height: 100%;
+			}
+		}
+		@include adaptive (1075) {
+			height: 300px;
+		}
+		@include adaptive (775) {
+			display: none;
+		}
+		&:last-of-type:not(#{$parent}__images_hammer) {
+			margin-right: auto;
+			margin-left: -28px;
+
+			margin-bottom: -6px;
+			margin-top: -430px;
+			& svg {
+				width: 645px;
+				height: 683px;
+			}
+			@include adaptive (1750) {
+				margin-left: 16px;
+				margin-bottom: auto;
+				margin-top: -351px;
+				margin-bottom: 138px;
+			}
+			@include adaptive (1075) {
+				display: none;
+			}
+		}
+	}
+}

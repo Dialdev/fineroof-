@@ -1,0 +1,196 @@
+.catalog-slider {
+	margin-top: 139px;
+	margin-bottom: 170px;
+	padding-bottom: 50px;
+	overflow: hidden;
+	@include adaptive (1375) {
+		margin-bottom: 80px;
+		padding-bottom: 0;
+	}
+	@include adaptive (775) {
+		margin-top: 70px;
+		margin-bottom: 60px;
+	}
+	$parent: &;
+	&__item {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+	}
+	&__pagination,
+	&__controls {
+		top: 87%;
+		left: 50% !important;
+	}
+	&__pagination {
+		justify-content: center;
+
+	}
+	&__heads {
+		display: flex;
+		justify-content: center;
+		margin-left: 11px;
+		margin-right: 14px;
+		@include adaptive(1280) {
+			position: absolute;
+			top: 11px;
+			left: -11px;
+
+		}
+		@include adaptive(1075) {
+			top: 38px;
+			left: auto;
+		}
+		@include adaptive(775) {
+			right: auto;
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			-moz-transform: translateX(-50%);
+			-ms-transform: translateX(-50%);
+			-o-transform: translateX(-50%);
+			transform: translateX(-50%);
+			margin: 0;
+		}
+		@include phone {
+			top: 11px;
+		}
+	}
+	&__wrapper {
+		max-width: 1000px;
+		margin-right: auto!important;
+		margin-left: -263px !important;
+		margin-top: 56px !important;
+		padding-bottom: 56px !important;
+		@include adaptive(1280) {
+			max-width: 526px;
+			padding-top: 56px !important;
+			margin-left: -15px !important;
+		}
+		@include adaptive (1075) {
+			max-width: 470px;
+			margin-top: 0px !important;
+		}
+		@include adaptive (775) {
+			max-width: none;
+			margin-left: 0 !important;
+		}
+		@include phone {
+			padding-top: 120px !important;
+		}
+	}
+	&__head {
+		@include adaptive(1280) {
+			flex-shrink: 0;
+			margin: 0px 20px;
+		}
+		@include adaptive(1075) {
+			flex-shrink: 1;
+		}
+		@include adaptive(775) {
+			margin: 0;
+		}
+		@include adaptive(610) {
+			width: 305px;
+			flex-shrink: 0;
+		}
+		@include phone {
+			max-width: 285px;
+			max-height: 300px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+	&__block {
+		border-radius: 50%;
+		overflow: hidden;
+		margin-top: -80px;
+		@include adaptive(1280) {
+			margin-top: 80px;
+		}
+		@include phone {
+			margin-top: -30px;
+		}
+	}
+	&__picture {
+		max-width: 347px;
+		width: 100%;
+		max-height: 347px;
+		border-radius: 50%;
+		overflow: hidden;
+		flex-shrink: 0;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@include adaptive (1075) {
+			max-width: 290px;
+			max-height: 290px;
+		}
+		@include phone {
+			max-width: 220px;
+			max-height: 220px;
+
+		}
+		& img {
+			display: block;
+			max-height: 100%;
+			object-fit: contain;
+
+		}
+	}
+	&__name {
+		color: #ffffff;
+		font-size: 33px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 1.65px;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 3;
+		@include adaptive (1075) {
+			font-size: 24px;
+		}
+		@include adaptive (610) {
+			font-size: 24px;
+
+		}
+	}
+	&__pattern {
+		width: 1368px;
+		height: 832px;
+		position: absolute;
+		right: -50%;
+		top: 0;
+		@include adaptive (1375) {
+			width: 101.5vw;
+			height: 838px;
+
+			right: -51vw;
+			top: -69px;
+		}
+		@include adaptive (1205) {
+			width: 93.5vw;
+			height: 838px;
+			right: -51vw;
+			top: 5px;
+		}
+		@include adaptive (1075) {
+			width: 83.5vw;
+			height: 838px;
+			right: -42vw;
+			top: 5px;
+		}
+		@include adaptive (775) {
+			display: none;
+		}
+
+	}
+}

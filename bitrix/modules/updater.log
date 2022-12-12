@@ -1,0 +1,525 @@
+2019-01-29 14:00:46 -  - exec CUpdateClient::GetUpdatesList
+2019-01-29 14:00:46 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:00:46 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.5&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.5&bitm_search=18.5.0&bitm_ui=18.0.3&bitm_translate=16.5.0&bitm_fileman=18.0.4&bitm_highloadblock=18.5.0&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.0&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.2&bitm_messageservice=18.0.0&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-N
+2019-01-29 14:00:46 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:00:47 -  - TIME GetUpdatesList(request) 0.701 sec
+2019-01-29 14:00:47 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:00:53 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:00:53 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:00:53 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.5&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.5&bitm_search=18.5.0&bitm_ui=18.0.3&bitm_translate=16.5.0&bitm_fileman=18.0.4&bitm_highloadblock=18.5.0&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.0&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.2&bitm_messageservice=18.0.0&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:00:53 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:00:53 -  - TIME LoadModulesUpdates(request) 0.38 sec
+2019-01-29 14:00:53 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:00:53 - S - STEP
+2019-01-29 14:00:53 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:00:54 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:00:54 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:00:54 -  - loadFile
+2019-01-29 14:00:54 - U - RETURN
+2019-01-29 14:00:54 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:00:54 -  - TIME UnGzipArchive 0.069 sec
+2019-01-29 14:00:54 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759654/main/updater18.1.6.php'
+2019-01-29 14:00:54 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759654/main/updater18.1.6.php': CopyFiles(install/components, components)
+2019-01-29 14:00:54 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759654/main/updater18.1.6.php': CopyFiles(install/js, js)
+2019-01-29 14:00:54 - CRUPDCDF2 - Run updater '/bitrix/updates/update_m1548759654/main/updater18.1.6.php': Query(INSERT INTO b_agent (MODULE_ID, SORT, NAME, ACTIVE, AGENT_INTERVAL, IS_PERIOD, NEXT_EXEC) VALUES('main', 100, '\\Bitrix\\Main\\UI\\Viewer\\FilePreviewTable::deleteOldAgent();', 'Y', 86400, 'N', CURRENT_DATE), )
+2019-01-29 14:00:55 -  - TIME UpdateStepModules 0.294 sec
+2019-01-29 14:00:55 - UPD_SUCCESS - Updated: main (18.1.6)<br><li>Добавлен упаковщик web-ресурсов в один javascript файл. <li>Исправлен ряд интерфейсных ошибок. 
+2019-01-29 14:00:55 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:00:55 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:00:55 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.6&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.6&bitm_search=18.5.0&bitm_ui=18.0.3&bitm_translate=16.5.0&bitm_fileman=18.0.4&bitm_highloadblock=18.5.0&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.0&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.2&bitm_messageservice=18.0.0&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:00:55 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:00:55 -  - TIME LoadModulesUpdates(request) 0.45 sec
+2019-01-29 14:00:55 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:00:55 - S - STEP
+2019-01-29 14:00:55 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:00:55 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:00:55 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:00:55 -  - loadFile
+2019-01-29 14:00:56 - U - RETURN
+2019-01-29 14:00:56 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:00:56 -  - TIME UnGzipArchive 0.006 sec
+2019-01-29 14:00:56 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759656/main/updater18.1.7.php'
+2019-01-29 14:00:56 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759656/main/updater18.1.7.php': CopyFiles(install/components, components)
+2019-01-29 14:00:56 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759656/main/updater18.1.7.php': CopyFiles(install/js, js)
+2019-01-29 14:00:56 -  - TIME UpdateStepModules 0.01 sec
+2019-01-29 14:00:56 - UPD_SUCCESS - Updated: main (18.1.7)<br><li>Изменения в верстке комментариев в мобильном приложении.
+2019-01-29 14:00:56 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:00:56 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:00:56 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.0.3&bitm_translate=16.5.0&bitm_fileman=18.0.4&bitm_highloadblock=18.5.0&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.0&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.2&bitm_messageservice=18.0.0&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:00:56 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:00:56 -  - TIME LoadModulesUpdates(request) 0.386 sec
+2019-01-29 14:00:56 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:00:56 - S - STEP
+2019-01-29 14:00:56 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:00:57 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:00:57 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:00:57 -  - loadFile
+2019-01-29 14:00:57 - U - RETURN
+2019-01-29 14:00:57 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:00:57 -  - TIME UnGzipArchive 0.017 sec
+2019-01-29 14:00:57 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759657/fileman/updater18.5.0.php'
+2019-01-29 14:00:57 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759657/fileman/updater18.5.0.php': CopyFiles(install/js, js)
+2019-01-29 14:00:57 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759657/fileman/updater18.5.0.php': CopyFiles(install/components, components)
+2019-01-29 14:00:57 -  - TIME UpdateStepModules 0.085 sec
+2019-01-29 14:00:57 - UPD_SUCCESS - Updated: fileman (18.5.0)<br><li>В плеере исправлена проблема переключения на следующий трек в списке, если первый не может воспроизвести. <li>Исправлена работоспособность свойства \"привязка к Яндекс.Карты\". <li>Добавлена возможность использования ключа Google Maps и Яндекс.Карты для сайта на всех его поддоменах. <li>Добавлен интерфейс ввода ключа Яндекс.Карт. <li>Исправлена проблема загрузки файлов в медиабиблиотеку при включенном сервисе cloudflare. <li>Блочный редактор: исправлена проблеама доступности выбора второй страницы компонентов. <li>Блочный редактор: возобновлена работоспосбность предпросмотра. 
+2019-01-29 14:00:57 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:00:57 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:00:57 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.0.3&bitm_translate=16.5.0&bitm_fileman=18.5.0&bitm_highloadblock=18.5.0&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.0&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.2&bitm_messageservice=18.0.0&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:00:57 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:00:58 -  - TIME LoadModulesUpdates(request) 0.426 sec
+2019-01-29 14:00:58 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:00:58 - S - STEP
+2019-01-29 14:00:58 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:00:58 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:00:58 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:00:58 -  - loadFile
+2019-01-29 14:00:58 - U - RETURN
+2019-01-29 14:00:58 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:00:58 -  - TIME UnGzipArchive 0.002 sec
+2019-01-29 14:00:58 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759658/fileman/updater18.5.1.php'
+2019-01-29 14:00:58 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759658/fileman/updater18.5.1.php': CopyFiles(install/js, js)
+2019-01-29 14:00:58 -  - TIME UpdateStepModules 0.037 sec
+2019-01-29 14:00:58 - UPD_SUCCESS - Updated: fileman (18.5.1)<br><li>Исправлена ошибка работы кнопки загрузки файлов.
+2019-01-29 14:00:58 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:00:58 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:00:58 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.0.3&bitm_translate=16.5.0&bitm_fileman=18.5.1&bitm_highloadblock=18.5.0&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.0&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.2&bitm_messageservice=18.0.0&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:00:58 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:00:59 -  - TIME LoadModulesUpdates(request) 0.497 sec
+2019-01-29 14:00:59 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:00:59 - S - STEP
+2019-01-29 14:00:59 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:00:59 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:00:59 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:00:59 -  - loadFile
+2019-01-29 14:01:00 - U - RETURN
+2019-01-29 14:01:00 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:01:00 -  - TIME UnGzipArchive 0.021 sec
+2019-01-29 14:01:00 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759660/fileman/updater18.5.2.php'
+2019-01-29 14:01:00 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759660/fileman/updater18.5.2.php': CopyFiles(install/components, components)
+2019-01-29 14:01:00 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759660/fileman/updater18.5.2.php': CopyFiles(install/js, js)
+2019-01-29 14:01:00 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759660/fileman/updater18.5.2.php': CopyFiles(install/images, images)
+2019-01-29 14:01:00 -  - TIME UpdateStepModules 0.086 sec
+2019-01-29 14:01:00 - UPD_SUCCESS - Updated: fileman (18.5.2)<br><li>Исправлена ошибка при скачивании файла в просмотре элемента медиабиблиотеки. <li>Исправлена ошибка показа папки сайта при редактировании/просмотре файла в административном разделе. <li>Другие незначительные исправления и улучшения.
+2019-01-29 14:01:00 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:00 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:01:00 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.0.3&bitm_translate=16.5.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.0&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.0&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.2&bitm_messageservice=18.0.0&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:01:00 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:01:00 -  - TIME LoadModulesUpdates(request) 0.362 sec
+2019-01-29 14:01:00 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:00 - S - STEP
+2019-01-29 14:01:00 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:01:01 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:01 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:01 -  - loadFile
+2019-01-29 14:01:01 - U - RETURN
+2019-01-29 14:01:01 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:01:01 -  - TIME UnGzipArchive 0.002 sec
+2019-01-29 14:01:01 -  - TIME UpdateStepModules 0.043 sec
+2019-01-29 14:01:01 - UPD_SUCCESS - Updated: translate (17.0.0)<br><li>Исправлена ошибка при отображении различий на папке с большим количеством файлов. <li>Исправлена ошибка, приводившая к аварийной остановке формирования экспортного csv файла. <li>Добавлен функционал удаления группы фраз. 
+2019-01-29 14:01:01 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:01 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:01:01 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.0.3&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.0&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.0&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.2&bitm_messageservice=18.0.0&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:01:01 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:01:01 -  - TIME LoadModulesUpdates(request) 0.364 sec
+2019-01-29 14:01:01 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:01 - S - STEP
+2019-01-29 14:01:01 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:01:02 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:02 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:02 -  - loadFile
+2019-01-29 14:01:02 - U - RETURN
+2019-01-29 14:01:02 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:01:02 -  - TIME UnGzipArchive 0.004 sec
+2019-01-29 14:01:02 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759662/highloadblock/updater18.5.1.php'
+2019-01-29 14:01:02 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759662/highloadblock/updater18.5.1.php': CopyFiles(install/components, components)
+2019-01-29 14:01:02 -  - TIME UpdateStepModules 0.008 sec
+2019-01-29 14:01:02 - UPD_SUCCESS - Updated: highloadblock (18.5.1)<br><li>Корректировка работы свойства справочника со значением по-умолчанию. <li>Исправлена ошибка импорта языкозависимых highload-блоков. <li>Исправлено отображение административного списка элементов при ограниченном доступе. 
+2019-01-29 14:01:02 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:02 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:01:02 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.0.3&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.0&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.2&bitm_messageservice=18.0.0&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:01:02 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:01:02 -  - TIME LoadModulesUpdates(request) 0.352 sec
+2019-01-29 14:01:02 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:02 - S - STEP
+2019-01-29 14:01:02 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:01:03 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:03 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:03 -  - loadFile
+2019-01-29 14:01:03 - U - RETURN
+2019-01-29 14:01:03 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:01:03 -  - TIME UnGzipArchive 0.009 sec
+2019-01-29 14:01:03 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759663/rest/updater18.5.3.php'
+2019-01-29 14:01:03 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759663/rest/updater18.5.3.php': CopyFiles(install/components, components)
+2019-01-29 14:01:03 -  - TIME UpdateStepModules 0.05 sec
+2019-01-29 14:01:03 - UPD_SUCCESS - Updated: rest (18.5.3)<br><li>Новый дизайн раздела приложений.
+2019-01-29 14:01:03 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:03 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:01:03 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.0.3&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.0&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.3&bitm_messageservice=18.0.0&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:01:03 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:01:04 -  - TIME LoadModulesUpdates(request) 0.353 sec
+2019-01-29 14:01:04 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:04 - S - STEP
+2019-01-29 14:01:04 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:01:04 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:04 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:04 -  - loadFile
+2019-01-29 14:01:04 - U - RETURN
+2019-01-29 14:01:04 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:01:04 -  - TIME UnGzipArchive 0.009 sec
+2019-01-29 14:01:04 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759664/rest/updater18.5.4.php'
+2019-01-29 14:01:04 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759664/rest/updater18.5.4.php': CopyFiles(install/components, components)
+2019-01-29 14:01:04 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759664/rest/updater18.5.4.php': CopyFiles(install/js, js)
+2019-01-29 14:01:04 -  - TIME UpdateStepModules 0.225 sec
+2019-01-29 14:01:04 - UPD_SUCCESS - Updated: rest (18.5.4)<br><li>Незначительные изменения. 
+2019-01-29 14:01:05 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:05 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:01:05 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.0.3&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.0&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.4&bitm_messageservice=18.0.0&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:01:05 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:01:05 -  - TIME LoadModulesUpdates(request) 0.511 sec
+2019-01-29 14:01:05 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:05 - S - STEP
+2019-01-29 14:01:05 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:01:05 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:05 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:05 -  - loadFile
+2019-01-29 14:01:06 - U - RETURN
+2019-01-29 14:01:06 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:01:06 -  - TIME UnGzipArchive 0.005 sec
+2019-01-29 14:01:06 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759666/rest/updater18.5.5.php'
+2019-01-29 14:01:06 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759666/rest/updater18.5.5.php': CopyFiles(install/components, components)
+2019-01-29 14:01:06 -  - TIME UpdateStepModules 0.103 sec
+2019-01-29 14:01:06 - UPD_SUCCESS - Updated: rest (18.5.5)<br><li>Возможность ограниченного использования методов /rest/event.bind, /rest/event.unbind и /rest/event.get пользователями без прав администратора. <li>Исправлена отдача часового пояса и смещения времени пользователя в /rest/profile. <li>Исправлена ошибка установки модуля. <li>Исправлена ошибка работы события ONAPPPAYMENT на коробочных установках Битрикс24.
+2019-01-29 14:01:06 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:06 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:01:06 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.0.3&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.0&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.0&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:01:06 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:01:07 -  - TIME LoadModulesUpdates(request) 0.545 sec
+2019-01-29 14:01:07 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:07 - S - STEP
+2019-01-29 14:01:07 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:01:07 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:07 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:07 -  - loadFile
+2019-01-29 14:01:07 - U - RETURN
+2019-01-29 14:01:07 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:01:07 -  - TIME UnGzipArchive 0.002 sec
+2019-01-29 14:01:07 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759667/b24connector/updater18.0.1.php'
+2019-01-29 14:01:07 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759667/b24connector/updater18.0.1.php': CopyFiles(install/components, components)
+2019-01-29 14:01:07 -  - TIME UpdateStepModules 0.004 sec
+2019-01-29 14:01:07 - UPD_SUCCESS - Updated: b24connector (18.0.1)<br><li>Добавлена поддержка новой версии виджета онлайн-чата.
+2019-01-29 14:01:07 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:07 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:01:07 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.0.3&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.0&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:01:07 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:01:08 -  - TIME LoadModulesUpdates(request) 0.471 sec
+2019-01-29 14:01:08 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:08 - S - STEP
+2019-01-29 14:01:08 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:01:08 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:08 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:08 -  - loadFile
+2019-01-29 14:01:08 - U - RETURN
+2019-01-29 14:01:08 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:01:08 -  - TIME UnGzipArchive 0.003 sec
+2019-01-29 14:01:08 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759668/messageservice/updater18.0.1.php'
+2019-01-29 14:01:08 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759668/messageservice/updater18.0.1.php': CopyFiles(install/components, components)
+2019-01-29 14:01:08 -  - TIME UpdateStepModules 0.008 sec
+2019-01-29 14:01:08 - UPD_SUCCESS - Updated: messageservice (18.0.1)<br><li>Внесены исправления в тексты локализации.
+2019-01-29 14:01:08 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:08 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:01:08 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.0.3&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:01:08 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:01:09 -  - TIME LoadModulesUpdates(request) 0.493 sec
+2019-01-29 14:01:09 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:09 - S - STEP
+2019-01-29 14:01:09 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:01:09 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:09 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:09 -  - loadFile
+2019-01-29 14:01:09 - U - RETURN
+2019-01-29 14:01:09 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:01:09 -  - TIME UnGzipArchive 0.008 sec
+2019-01-29 14:01:09 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759669/ui/updater18.5.0.php'
+2019-01-29 14:01:09 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759669/ui/updater18.5.0.php': CopyFiles(install/components, components)
+2019-01-29 14:01:09 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759669/ui/updater18.5.0.php': CopyFiles(install/js, js)
+2019-01-29 14:01:09 -  - TIME UpdateStepModules 0.064 sec
+2019-01-29 14:01:09 - UPD_SUCCESS - Updated: ui (18.5.0)<br><li>Добавлен ui.viewer. 
+2019-01-29 14:01:10 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:10 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:01:10 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.0&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:01:10 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:01:10 -  - TIME LoadModulesUpdates(request) 0.342 sec
+2019-01-29 14:01:10 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:10 - S - STEP
+2019-01-29 14:01:10 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:01:10 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:10 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:10 -  - loadFile
+2019-01-29 14:01:11 - U - RETURN
+2019-01-29 14:01:11 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:01:11 -  - TIME UnGzipArchive 0.038 sec
+2019-01-29 14:01:11 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759671/ui/updater18.5.1.php'
+2019-01-29 14:01:11 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759671/ui/updater18.5.1.php': CopyFiles(install/components, components)
+2019-01-29 14:01:11 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759671/ui/updater18.5.1.php': CopyFiles(install/js, js)
+2019-01-29 14:01:11 -  - TIME UpdateStepModules 0.15 sec
+2019-01-29 14:01:11 - UPD_SUCCESS - Updated: ui (18.5.1)<br><li>Добавлена поддержка библиотеки VueJS и Vuex.
+2019-01-29 14:01:11 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:11 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:01:11 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.1&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:01:11 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:01:11 -  - TIME LoadModulesUpdates(request) 0.384 sec
+2019-01-29 14:01:11 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:11 - S - STEP
+2019-01-29 14:01:11 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:01:12 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:12 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:12 -  - loadFile
+2019-01-29 14:01:12 - U - RETURN
+2019-01-29 14:01:12 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:01:12 -  - TIME UnGzipArchive 0.014 sec
+2019-01-29 14:01:12 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759672/ui/updater18.5.2.php'
+2019-01-29 14:01:12 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759672/ui/updater18.5.2.php': CopyFiles(install/js, js)
+2019-01-29 14:01:12 -  - TIME UpdateStepModules 0.018 sec
+2019-01-29 14:01:12 - UPD_SUCCESS - Updated: ui (18.5.2)<br><li>Исправления для повышения стабильности библиотек VueJS на внешних сайтах.
+2019-01-29 14:01:12 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:12 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:01:12 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.2&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.9&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:01:12 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:01:13 -  - TIME LoadModulesUpdates(request) 0.388 sec
+2019-01-29 14:01:13 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:13 - S - STEP
+2019-01-29 14:01:13 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:01:13 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:13 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:13 -  - loadFile
+2019-01-29 14:01:13 - U - RETURN
+2019-01-29 14:01:13 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:01:13 -  - TIME UnGzipArchive 0.003 sec
+2019-01-29 14:01:13 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759673/landing/updater18.5.10.php'
+2019-01-29 14:01:13 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759673/landing/updater18.5.10.php': CopyFiles(install/components, components)
+2019-01-29 14:01:14 -  - TIME UpdateStepModules 0.295 sec
+2019-01-29 14:01:14 - UPD_SUCCESS - Updated: landing (18.5.10)<br><li>Улучшен экспорт-импорт партнерских шаблонов. <li>Добавлена поддержка call-трекинга.
+2019-01-29 14:01:14 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:14 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:01:14 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.2&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.10&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:01:14 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:01:16 -  - TIME LoadModulesUpdates(request) 1.772 sec
+2019-01-29 14:01:16 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:16 - S - STEP
+2019-01-29 14:01:16 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:01:16 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:16 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:16 -  - loadFile
+2019-01-29 14:01:16 - U - RETURN
+2019-01-29 14:01:16 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:01:16 -  - TIME UnGzipArchive 0.024 sec
+2019-01-29 14:01:16 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759676/landing/updater18.5.11.php'
+2019-01-29 14:01:16 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759676/landing/updater18.5.11.php': CopyFiles(install/components, components)
+2019-01-29 14:01:16 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759676/landing/updater18.5.11.php': CopyFiles(install/templates, templates)
+2019-01-29 14:01:16 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759676/landing/updater18.5.11.php': CopyFiles(install/blocks, blocks)
+2019-01-29 14:01:16 -  - TIME UpdateStepModules 0.055 sec
+2019-01-29 14:01:16 - UPD_SUCCESS - Updated: landing (18.5.11)<br><li>Праздничные шаблоны на Новый год и Рождество.
+2019-01-29 14:01:17 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:17 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:01:17 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.2&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.11&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:01:17 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:01:17 -  - TIME LoadModulesUpdates(request) 0.359 sec
+2019-01-29 14:01:17 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:17 - S - STEP
+2019-01-29 14:01:17 - LMU01 - LoadModulesUpdates-Step
+2019-01-29 14:01:17 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:17 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:17 -  - loadFile
+2019-01-29 14:01:17 - U - RETURN
+2019-01-29 14:01:17 -  - exec CUpdateClient::UnGzipArchive
+2019-01-29 14:01:17 -  - TIME UnGzipArchive 0.001 sec
+2019-01-29 14:01:17 - CSURUS1 - Run updater '/bitrix/updates/update_m1548759677/landing/updater18.5.12.php'
+2019-01-29 14:01:17 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1548759677/landing/updater18.5.12.php': CopyFiles(install/components, components)
+2019-01-29 14:01:17 -  - TIME UpdateStepModules 0.002 sec
+2019-01-29 14:01:17 - UPD_SUCCESS - Updated: landing (18.5.12)<br><li>Техническое обновление. 
+2019-01-29 14:01:18 -  - exec CUpdateClient::LoadModulesUpdates
+2019-01-29 14:01:18 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 14:01:18 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.2&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.12&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 14:01:18 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 14:01:18 -  - TIME LoadModulesUpdates(request) 0.303 sec
+2019-01-29 14:01:18 -  - exec CUpdateClient::ParseServerData
+2019-01-29 14:01:18 - STEP - Finish - NOUPDATES
+2019-01-29 14:01:18 - STEP - Finish - NOUPDATES
+2019-01-29 22:01:30 -  - exec CUpdateClient::GetUpdatesList
+2019-01-29 22:01:30 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 22:01:30 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.2&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.12&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 22:01:30 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 22:01:30 -  - TIME GetUpdatesList(request) 0.382 sec
+2019-01-29 22:01:30 -  - exec CUpdateClient::ParseServerData
+2019-01-29 23:25:46 -  - exec CUpdateClient::GetUpdatesList
+2019-01-29 23:25:46 -  - exec CUpdateClient::CollectRequestData
+2019-01-29 23:25:46 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.2&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.12&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-29 23:25:46 -  - exec CUpdateClient::GetHTTPPage
+2019-01-29 23:25:46 -  - TIME GetUpdatesList(request) 0.33 sec
+2019-01-29 23:25:46 -  - exec CUpdateClient::ParseServerData
+2019-01-30 23:09:24 -  - exec CUpdateClient::GetUpdatesList
+2019-01-30 23:09:24 -  - exec CUpdateClient::CollectRequestData
+2019-01-30 23:09:24 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.2&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.12&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-30 23:09:24 -  - exec CUpdateClient::GetHTTPPage
+2019-01-30 23:09:25 -  - TIME GetUpdatesList(request) 0.333 sec
+2019-01-30 23:09:25 -  - exec CUpdateClient::ParseServerData
+2019-01-30 23:09:35 -  - exec CUpdateClient::GetUpdatesList
+2019-01-30 23:09:35 -  - exec CUpdateClient::CollectRequestData
+2019-01-30 23:09:35 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.2&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.12&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-30 23:09:35 -  - exec CUpdateClient::GetHTTPPage
+2019-01-30 23:09:35 -  - TIME GetUpdatesList(request) 0.409 sec
+2019-01-30 23:09:35 -  - exec CUpdateClient::ParseServerData
+2019-01-30 23:11:01 -  - exec CUpdateClient::ActivateLicenseKey
+2019-01-30 23:11:01 -  - exec CUpdateClient::CollectRequestData
+2019-01-30 23:11:01 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.2&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.12&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y&query_type=activate
+2019-01-30 23:11:01 -  - exec CUpdateClient::GetHTTPPage
+2019-01-30 23:11:02 -  - TIME ActivateLicenseKey(request) 0.386 sec
+2019-01-30 23:11:02 -  - exec CUpdateClient::ParseServerData
+2019-01-30 23:11:02 - CUALK - License key activated successfully!
+2019-01-30 23:11:02 - UPD_SUCCESS - Licence activated
+2019-01-30 23:11:02 -  - exec CUpdateClient::GetUpdatesList
+2019-01-30 23:11:02 -  - exec CUpdateClient::CollectRequestData
+2019-01-30 23:11:02 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.2&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.12&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-30 23:11:02 -  - exec CUpdateClient::GetHTTPPage
+2019-01-30 23:11:02 -  - TIME GetUpdatesList(request) 0.258 sec
+2019-01-30 23:11:02 -  - exec CUpdateClient::ParseServerData
+2019-01-30 23:11:05 -  - exec CUpdateClient::RegisterVersion
+2019-01-30 23:11:05 -  - exec CUpdateClient::CollectRequestData
+2019-01-30 23:11:05 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=D&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.2&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.12&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y&query_type=register
+2019-01-30 23:11:05 -  - exec CUpdateClient::GetHTTPPage
+2019-01-30 23:11:05 -  - TIME RegisterVersion(request) 0.19 sec
+2019-01-30 23:11:05 -  - exec CUpdateClient::UnGzipArchive
+2019-01-30 23:11:05 -  - TIME UnGzipArchive 0.001 sec
+2019-01-30 23:11:05 -  - exec CUpdateClient::ParseServerData
+2019-01-30 23:11:05 - CURV - Product registered successfully!
+2019-01-30 23:11:05 - UPD_SUCCESS - Registered
+2019-01-30 23:11:51 -  - exec CUpdateClient::GetUpdatesList
+2019-01-30 23:11:51 -  - exec CUpdateClient::CollectRequestData
+2019-01-30 23:11:51 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.2&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.12&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-01-30 23:11:51 -  - exec CUpdateClient::GetHTTPPage
+2019-01-30 23:11:52 -  - TIME GetUpdatesList(request) 0.215 sec
+2019-01-30 23:11:52 -  - exec CUpdateClient::ParseServerData
+2019-02-02 10:55:03 -  - exec CUpdateClient::GetUpdatesList
+2019-02-02 10:55:03 -  - exec CUpdateClient::CollectRequestData
+2019-02-02 10:55:03 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.2&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.12&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-02-02 10:55:03 -  - exec CUpdateClient::GetHTTPPage
+2019-02-02 10:55:03 -  - TIME GetUpdatesList(request) 0.466 sec
+2019-02-02 10:55:03 -  - exec CUpdateClient::ParseServerData
+2019-02-02 15:51:50 -  - exec CUpdateClient::GetUpdatesList
+2019-02-02 15:51:50 -  - exec CUpdateClient::CollectRequestData
+2019-02-02 15:51:50 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.2&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.12&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-02-02 15:51:50 -  - exec CUpdateClient::GetHTTPPage
+2019-02-02 15:51:50 -  - TIME GetUpdatesList(request) 0.357 sec
+2019-02-02 15:51:50 -  - exec CUpdateClient::ParseServerData
+2019-02-26 15:59:29 -  - exec CUpdateClient::GetUpdatesList
+2019-02-26 15:59:29 -  - exec CUpdateClient::CollectRequestData
+2019-02-26 15:59:29 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.new.dialtest.ru&CHHB=fineroof.new.dialtest.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.22&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_search=18.5.0&bitm_ui=18.5.2&bitm_translate=17.0.0&bitm_fileman=18.5.2&bitm_highloadblock=18.5.1&bitm_socialservices=18.0.3&bitm_landing=18.5.12&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_bitrixcloud=18.5.0&bitm_clouds=18.0.0&bitm_rest=18.5.5&bitm_messageservice=18.0.1&bitm_compression=16.0.0&bitm_perfmon=18.5.0&bitm_iblock=18.5.4&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=Y&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-02-26 15:59:29 -  - exec CUpdateClient::GetHTTPPage
+2019-02-26 15:59:30 -  - TIME GetUpdatesList(request) 0.237 sec
+2019-02-26 15:59:30 -  - exec CUpdateClient::ParseServerData
+2019-03-01 17:34:03 -  - exec CUpdateClient::GetUpdatesList
+2019-03-01 17:34:03 -  - exec CUpdateClient::CollectRequestData
+2019-03-01 17:34:03 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2019-03-01 17:34:03 -  - exec CUpdateClient::GetHTTPPage
+2019-03-01 17:34:05 -  - TIME GetUpdatesList(request) 1.258 sec
+2019-03-01 17:34:05 -  - exec CUpdateClient::ParseServerData
+2019-04-18 15:00:29 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1555588829/asd.iblock/updater4.7.9.php': CopyFiles(install/js, js/)
+2019-04-18 15:00:29 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1555588829/asd.iblock/updater4.7.9.php': CopyFiles(install/panel, panel/)
+2019-04-18 15:00:31 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1555588831/asd.iblock/updater4.7.10.php': CopyFiles(install/js, js/)
+2019-04-18 15:00:31 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1555588831/asd.iblock/updater4.7.10.php': CopyFiles(install/panel, panel/)
+2019-04-18 15:00:33 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1555588833/asd.iblock/updater4.7.12.php': CopyFiles(install/js, js/)
+2019-04-18 15:00:33 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1555588833/asd.iblock/updater4.7.12.php': CopyFiles(install/panel, panel/)
+2019-04-18 15:00:34 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1555588834/asd.iblock/updater4.7.13.php': CopyFiles(install/js, js/)
+2019-04-18 15:00:34 - CRUPDCF1 - Run updater '/bitrix/updates/update_m1555588834/asd.iblock/updater4.7.13.php': CopyFiles(install/admin, admin/)
+2020-01-24 19:54:20 -  - exec CUpdateClient::GetUpdatesList
+2020-01-24 19:54:20 -  - exec CUpdateClient::CollectRequestData
+2020-01-24 19:54:20 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2020-01-24 19:54:20 -  - exec CUpdateClient::GetHTTPPage
+2020-01-24 19:54:20 -  - TIME GetUpdatesList(request) 0.203 sec
+2020-01-24 19:54:20 -  - exec CUpdateClient::ParseServerData
+2020-02-11 17:05:08 -  - exec CUpdateClient::GetUpdatesList
+2020-02-11 17:05:08 -  - exec CUpdateClient::CollectRequestData
+2020-02-11 17:05:08 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2020-02-11 17:05:08 -  - exec CUpdateClient::GetHTTPPage
+2020-02-11 17:05:08 -  - TIME GetUpdatesList(request) 0.241 sec
+2020-02-11 17:05:08 -  - exec CUpdateClient::ParseServerData
+2020-05-06 13:26:17 -  - exec CUpdateClient::GetUpdatesList
+2020-05-06 13:26:17 -  - exec CUpdateClient::CollectRequestData
+2020-05-06 13:26:17 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2020-05-06 13:26:17 -  - exec CUpdateClient::GetHTTPPage
+2020-05-06 13:26:17 -  - TIME GetUpdatesList(request) 0.209 sec
+2020-05-06 13:26:17 -  - exec CUpdateClient::ParseServerData
+2021-01-26 13:19:29 -  - exec CUpdateClient::GetUpdatesList
+2021-01-26 13:19:29 -  - exec CUpdateClient::CollectRequestData
+2021-01-26 13:19:29 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2021-01-26 13:19:29 -  - exec CUpdateClient::GetHTTPPage
+2021-01-26 13:19:29 -  - TIME GetUpdatesList(request) 0.165 sec
+2021-01-26 13:19:29 -  - exec CUpdateClient::ParseServerData
+2021-01-26 13:19:29 -  - exec CUpdateClient::executeCounters
+2021-01-26 13:19:29 -  - exec CUpdateClient::CollectRequestData
+2021-01-26 13:19:29 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y&query_type=counter&cntr_result[332]=G
+2021-01-26 13:19:29 -  - exec CUpdateClient::GetHTTPPage
+2021-01-26 13:19:29 -  - TIME executeCounters 0.207 sec
+2021-01-26 13:56:02 -  - exec CUpdateClient::GetUpdatesList
+2021-01-26 13:56:02 -  - exec CUpdateClient::CollectRequestData
+2021-01-26 13:56:02 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2021-01-26 13:56:02 -  - exec CUpdateClient::GetHTTPPage
+2021-01-26 13:56:02 -  - TIME GetUpdatesList(request) 0.176 sec
+2021-01-26 13:56:02 -  - exec CUpdateClient::ParseServerData
+2021-01-26 13:56:02 -  - exec CUpdateClient::executeCounters
+2021-01-26 13:56:02 -  - exec CUpdateClient::CollectRequestData
+2021-01-26 13:56:02 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y&query_type=counter&cntr_result[332]=G
+2021-01-26 13:56:02 -  - exec CUpdateClient::GetHTTPPage
+2021-01-26 13:56:03 -  - TIME executeCounters 0.225 sec
+2021-02-03 21:17:47 -  - exec CUpdateClient::GetUpdatesList
+2021-02-03 21:17:47 -  - exec CUpdateClient::CollectRequestData
+2021-02-03 21:17:47 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2021-02-03 21:17:47 -  - exec CUpdateClient::GetHTTPPage
+2021-02-03 21:17:47 -  - TIME GetUpdatesList(request) 0.299 sec
+2021-02-03 21:17:47 -  - exec CUpdateClient::ParseServerData
+2021-02-03 21:17:47 -  - exec CUpdateClient::executeCounters
+2021-02-03 21:17:47 -  - exec CUpdateClient::CollectRequestData
+2021-02-03 21:17:47 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y&query_type=counter&cntr_result[332]=G
+2021-02-03 21:17:47 -  - exec CUpdateClient::GetHTTPPage
+2021-02-03 21:17:48 -  - TIME executeCounters 0.199 sec
+2022-03-21 20:54:10 -  - exec CUpdateClient::GetUpdatesList
+2022-03-21 20:54:10 -  - exec CUpdateClient::CollectRequestData
+2022-03-21 20:54:10 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2022-03-21 20:54:10 -  - exec CUpdateClient::GetHTTPPage
+2022-03-21 20:54:10 -  - TIME GetUpdatesList(request) 0.282 sec
+2022-03-21 20:54:10 -  - exec CUpdateClient::ParseServerData
+2022-03-22 13:32:17 -  - exec CUpdateClient::GetUpdatesList
+2022-03-22 13:32:17 -  - exec CUpdateClient::CollectRequestData
+2022-03-22 13:32:17 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2022-03-22 13:32:17 -  - exec CUpdateClient::GetHTTPPage
+2022-03-22 13:32:20 -  - TIME GetUpdatesList(request) 2.814 sec
+2022-03-22 13:32:20 -  - exec CUpdateClient::ParseServerData
+2022-03-30 11:45:19 -  - exec CUpdateClient::GetUpdatesList
+2022-03-30 11:45:19 -  - exec CUpdateClient::CollectRequestData
+2022-03-30 11:45:19 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2022-03-30 11:45:19 -  - exec CUpdateClient::GetHTTPPage
+2022-03-30 11:45:19 -  - TIME GetUpdatesList(request) 0.192 sec
+2022-03-30 11:45:19 -  - exec CUpdateClient::ParseServerData
+2022-03-30 14:20:06 -  - exec CUpdateClient::GetUpdatesList
+2022-03-30 14:20:06 -  - exec CUpdateClient::CollectRequestData
+2022-03-30 14:20:06 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2022-03-30 14:20:06 -  - exec CUpdateClient::GetHTTPPage
+2022-03-30 14:20:06 -  - TIME GetUpdatesList(request) 0.252 sec
+2022-03-30 14:20:06 -  - exec CUpdateClient::ParseServerData
+2022-03-31 12:10:10 -  - exec CUpdateClient::GetUpdatesList
+2022-03-31 12:10:10 -  - exec CUpdateClient::CollectRequestData
+2022-03-31 12:10:10 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2022-03-31 12:10:10 -  - exec CUpdateClient::GetHTTPPage
+2022-03-31 12:10:10 -  - TIME GetUpdatesList(request) 0.175 sec
+2022-03-31 12:10:10 -  - exec CUpdateClient::ParseServerData
+2022-04-05 10:56:11 -  - exec CUpdateClient::GetUpdatesList
+2022-04-05 10:56:11 -  - exec CUpdateClient::CollectRequestData
+2022-04-05 10:56:11 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y
+2022-04-05 10:56:11 -  - exec CUpdateClient::GetHTTPPage
+2022-04-05 10:56:11 -  - TIME GetUpdatesList(request) 0.188 sec
+2022-04-05 10:56:11 -  - exec CUpdateClient::ParseServerData
+2022-04-05 10:56:11 -  - exec CUpdateClient::executeCounters
+2022-04-05 10:56:11 -  - exec CUpdateClient::CollectRequestData
+2022-04-05 10:56:11 -  - LICENSE_KEY=X&lang=ru&SUPD_VER=18.1.3&VERSION=18.1.7&TYPENC=E&SUPD_STS=1&SUPD_URS=0&SUPD_DBS=MYSQL&XE=N&CLIENT_SITE=fineroof.ru&CHHB=fineroof.ru&CSAB=127.0.0.1&SUID=5b99c23718f60956a380b7d1ee81abe1&CANGZIP=Y&CLIENT_PHPVER=7.1.26&stable=Y&NGINX=Y&rerere=Y&bitm_main=18.1.7&bitm_highloadblock=18.5.1&bitm_ui=18.5.2&bitm_clouds=18.0.0&bitm_socialservices=18.0.3&bitm_messageservice=18.0.1&bitm_translate=17.0.0&bitm_rest=18.5.5&bitm_seo=18.5.0&bitm_b24connector=18.0.1&bitm_compression=16.0.0&bitm_bitrixcloud=18.5.0&bitm_landing=18.5.12&bitm_fileman=18.5.2&bitm_iblock=18.5.4&bitm_perfmon=18.5.0&bitm_search=18.5.0&bitl_en=&bitl_ru=&SUPD_SRS=RU&SUPD_CMP=N&SALE_15=Y&LICENSE_SIGNED=%7Enew_license18_0_sign-Y&query_type=counter&cntr_result[370]=X&cntr_result[372]=X
+2022-04-05 10:56:11 -  - exec CUpdateClient::GetHTTPPage
+2022-04-05 10:56:11 -  - TIME executeCounters 0.134 sec

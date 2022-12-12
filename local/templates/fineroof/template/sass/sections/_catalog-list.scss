@@ -1,0 +1,285 @@
+.catalog-list {
+	$parent: &;
+	&__row {
+		width: 100%;
+
+		border: 2px solid #e1f1ed;
+		border-radius: 6px;
+		background-color: #ffffff;
+
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		align-items: stretch;
+
+		padding: 17px 0;
+		margin-bottom: 8px;
+		@include adaptive(610) {
+			flex-direction: column;
+			border: none;
+		}
+		&_width {
+			width: 100%;
+	    	max-width: 390px;
+			@include adaptive(610) {
+				max-width: none;
+			}
+		}
+		& #{$parent}__block {
+			@include adaptive(610) {
+				border-radius: 6px;
+				border-top: 2px solid #e1f1ed;
+				border-bottom: 2px solid #e1f1ed;
+				border-left: 2px solid #e1f1ed;
+				border-right: 2px solid #e1f1ed;
+				margin: 13.5px 0;
+
+			}
+			&:nth-child(2) {
+				border-left: 2px solid #e1f1ed;
+				border-right: 2px solid #e1f1ed;
+			}
+		}
+	}
+
+
+	&__icon {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-start;
+		& svg {
+			width: 120px;
+			height: 100px;
+			fill:#1bc09b;
+
+		}
+	}
+	&__name {
+		color: #232323;
+		font-size: 17px;
+		font-weight: 700;
+		letter-spacing: 0.42px;
+
+		margin-bottom: 31px;
+
+		transition: inherit;
+	}
+	&__list {
+		list-style-type: none;
+
+		padding: 0;
+		margin: 0;
+		padding-top: 25px;
+
+		transition: inherit;
+		&::before {
+			content: '';
+
+			width: 34px;
+			height: 5px;
+
+			background-color: #1bc09b;
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			@include adaptive(1075) {
+				left: 50%;
+				-webkit-transform: translateX(-50%);
+				-moz-transform: translateX(-50%);
+				-ms-transform: translateX(-50%);
+				-o-transform: translateX(-50%);
+				transform: translateX(-50%);
+			}
+		}
+	}
+	&__top {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+
+		align-self: flex-start;
+
+		transition: inherit;
+		@include adaptive(1075) {
+			align-self: center;
+		}
+	}
+	&__item {
+		color: #b7b7b7;
+		font-size: 15px;
+		font-weight: 600;
+		line-height: 23px;
+		letter-spacing: 0.38px;
+
+		transition: inherit;
+
+
+		&:hover {
+			color: #1bc09b;
+			& a {
+				color: #1bc09b;
+			}
+		}
+	}
+	&__block {
+		min-height: 400px;
+		width: calc(100% / 3);
+		max-width: calc(100% / 3);
+
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		flex-grow: 1;
+
+		padding: 0px 17px 10px 54px;
+
+		cursor: pointer;
+
+		transition: .3s;
+		&_mod1 {
+			& #{$parent}__icon {
+				& use {
+					x: -20;
+				}
+			}
+		}
+		&_mod2 {
+			& #{$parent}__icon {
+				& use {
+					y: 4;
+				}
+			}
+		}
+		&_mod3 {
+			& #{$parent}__icon {
+				& use {
+					x: -21;
+					y: 3;
+
+				}
+			}
+		}
+		&_mod4 {
+			& #{$parent}__icon {
+				& use {
+					x: -24;
+				}
+			}
+		}
+		&_mod5 {
+			& #{$parent}__icon {
+				& use {
+					x: -5;
+					y: 5;
+				}
+			}
+		}
+		&_mod6 {
+			& #{$parent}__icon {
+				& use {
+					x: -24;
+					y: -7;
+				}
+			}
+		}
+		&_mod7 {
+			& #{$parent}__icon {
+				& svg {
+					height: 110px;
+				}
+				& use {
+					x: -2;
+					y: -3;
+				}
+			}
+		}
+		&_mod8 {
+			& #{$parent}__icon {
+				& use {
+					x: -3;
+					y: -9;
+				}
+			}
+		}
+		@include adaptive(1075) {
+			align-items: center;
+			text-align: center;
+			padding: 0px 15px 10px 15px;
+		}
+		@include adaptive(610) {
+			width: 100%;
+			max-width: 100%;
+			padding: 15px;
+		}
+		&.isActive {
+			& #{$parent}__name {
+				color: #1bc09b;
+			}
+			& #{$parent}__status {
+				background-color: transparent;
+				& svg {
+					opacity: 1;
+				}
+			}
+			& #{$parent}__icon {
+				svg {
+
+					fill: #1bc09b;
+				}
+			}
+			& #{$parent}__item:not(:hover) {
+				color: #232323;
+			}
+		}
+		&:not(.isActive):hover {
+			& #{$parent}__icon {
+				svg {
+					fill: #1bc09b;
+				}
+			}
+			& #{$parent}__name {
+				color: #1bc09b;
+			}
+			& #{$parent}__status {
+				background-color: transparent;
+				& svg {
+					opacity: 1;
+				}
+			}
+			& #{$parent}__item:not(:hover) a {
+				color: #232323;
+			}
+
+		}
+	}
+	&__status {
+		width: 26px;
+		height: 26px;
+
+		border-radius: 50%;
+		background-color: #e1f1ed;
+		align-self: flex-end;
+
+		transition: .3s;
+		& svg {
+			width: 100%;
+			height: 100%;
+
+			display: block;
+
+			position: absolute;
+			top: 50%;
+			left: 50%;
+
+			transform: translate(-50%, -50%);
+			opacity: 0;
+		}
+	}
+}

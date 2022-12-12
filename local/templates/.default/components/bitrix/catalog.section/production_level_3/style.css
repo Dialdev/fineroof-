@@ -1,0 +1,26 @@
+.catalog-list-item__desc-level3 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 75%;
+}
+
+.catalog-list-item__desc-level3 .catalog-list-item__props {
+    margin-left: 0;
+}
+
+.catalog-list-item__text {
+    text-align: justify;
+}
+
+.catalog-list-item__button.classic-button.classic-button_green {
+    flex-grow: 1;
+}
+
+.catalog-list-item__props .catalog-list-item__prop {
+    padding-left: 0;
+}
+a.pluso-more {
+    display: none!important;
+}

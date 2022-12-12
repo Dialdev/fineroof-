@@ -1,0 +1,246 @@
+.catalog {
+	$parent: &;
+	& .container {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		justify-content: center;
+		padding-top: 126px;
+		padding-bottom: 10px;
+		border-top: 2px solid #e1f1ed;
+		border-bottom: 2px solid #e1f1ed;
+		@include adaptive (1075) {
+			padding-top: 40px;
+			padding-bottom: 10px;
+		}
+	}
+	&__title {
+		margin-bottom: 47px;
+		& span {
+			&:last-child {
+
+				padding-right: 15px;
+				@include adaptive(1075) {
+					padding-right: 4px;
+				}
+				@include adaptive(610) {
+					padding-right: 9.5px;
+				}
+			}
+		}
+		@include adaptive (775) {
+			margin-bottom: 25px;
+		}
+	}
+	&__svg {
+		&_hammer {
+			position: absolute;
+			right: -64px;
+			top: 27px;
+			-webkit-transform: translateX(700px);
+			-moz-transform: translateX(700px);
+			-ms-transform: translateX(700px);
+			-o-transform: translateX(700px);
+			transform: translateX(700px);
+			@include adaptive (1075) {
+				right: -90px;
+				top: -49px;
+
+			}
+			@include adaptive (1075) {
+				display: none;
+			}
+			& svg {
+				width: 450px;
+				height: 450px;
+			}
+		}
+		&_worker {
+			position: absolute;
+			left: -171px;
+			top: 55px;
+			-webkit-transform: translateX(-700px);
+			-moz-transform: translateX(-700px);
+			-ms-transform: translateX(-700px);
+			-o-transform: translateX(-700px);
+			transform: translateX(-700px);
+			@include adaptive (1655) {
+				left: -373px;
+			}
+			@include adaptive (1375) {
+				left: -440px;
+			}
+			@include adaptive (1075) {
+				display: none;
+			}
+			& svg {
+				width: 766px;
+				height: 766px;
+			}
+		}
+	}
+	&__wrap {
+		max-width: 1200px;
+		width: 100%;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+	&__wrapper {
+	    max-width: 699px;
+		width: 100%;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+	}
+	&__row {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		align-items: stretch;
+		justify-content: center;
+		margin: 0px -28px;
+		@include adaptive (775) {
+			width: 100%;
+			flex-wrap: wrap;
+			justify-content: unset;
+			margin: 0px -10px;
+		}
+		@include adaptive (610) {
+			flex-direction: column;
+			align-items: center;
+		}
+		@include phone {
+			justify-content: center;
+		}
+		&:nth-child(1) {
+			justify-content: space-between;
+			margin: 0px -49px;
+			& #{$parent}__item {
+				margin: 0px 36px 51px;
+				&:last-child {
+					margin: 0px -10px 51px 71px;
+				}
+			}
+			@include adaptive (775) {
+				justify-content: unset;
+			}
+			@include phone {
+				justify-content: center;
+			}
+
+		}
+		&:nth-child(2) {
+			& #{$parent}__item {
+				margin: 0px 17px 44px;
+				&:nth-child(1) {
+					justify-content: flex-end;
+					@include adaptive (775) {
+						justify-content: center;
+					}
+				}
+				&:nth-child(3) {
+					justify-content: flex-start;
+
+						margin: 0px 1px 44px -3px;
+					@include adaptive (775) {
+						justify-content: center;
+					}
+				}
+			}
+		}
+		& #{$parent}__item {
+			&:nth-child(2) {
+				min-width: 158px;
+				flex-grow: 0;
+				flex-shrink: 1;
+			}
+
+		}
+	}
+	&__picture {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 10px;
+		@include adaptive (775) {
+			margin-bottom: 10px;
+		}
+		& svg {
+			width: 149px;
+			height: 105px;
+		}
+	}
+	&__subwrap {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__item {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		justify-content: center;
+		flex-grow: 1;
+		flex-shrink: 0;
+		margin: 0px 28px 66px;
+		&:hover {
+			& svg {
+				fill: black;
+			}
+			& #{$parent}__name {
+				border-bottom-color: transparent;
+			}
+		}
+		@include adaptive (1075) {
+			margin: 0px 28px 30px;
+		}
+		@include adaptive (775) {
+			width: 100%;
+			flex-grow: 0;
+			flex-shrink: 1;
+			margin: 0px 10px 20px!important;
+		}
+		&:nth-child(4) {
+			align-items: flex-end;
+			@include adaptive (775) {
+				align-items: center;
+			}
+		}
+		&:nth-child(6) {
+			align-items: flex-start;
+			@include adaptive (775) {
+				align-items: center;
+			}
+		}
+	}
+	&__name {
+		text-align: center;
+		color: #000000;
+		font-size: 17px;
+		font-weight: 700;
+		letter-spacing: 0.42px;
+		border-bottom: 5px solid #1bc09b;
+
+		transition: .3s;
+		@include adaptive (775) {
+			font-size: 15px;
+			letter-spacing: normal;
+			border-bottom-width: 3px;
+		}
+		@include phone {
+			font-size: 14px;
+			text-decoration: underline;
+			border-bottom: none;
+		}
+	}
+}

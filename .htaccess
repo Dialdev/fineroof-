@@ -1,0 +1,97 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+
+php_value max_input_vars 10000
+
+RewriteEngine On
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTP/
+RewriteRule ^index\.php$ http://fineroof.ru/ [R=301,L]
+
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.fineroof\.ru$ [NC]
+RewriteRule ^(.*)$ http://fineroof.ru/$1 [R=301,L]
+</IfModule>
+
+
+RewriteCond %{THE_REQUEST} // 
+# Проверяем, повторяется ли слеш (//) более двух раз. 
+RewriteRule .* /$0 [R=301,L] 
+# Исключаем все лишние слеши.
+
+RewriteCond %{THE_REQUEST} ^[^\s]+\s+[^?]*?\?
+RewriteCond %{QUERY_STRING} ^$
+RewriteRule .? %{REQUEST_URI}? [R=301,L] 
+
+RewriteRule ^sitemap.xml$ sitemap.php [L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^.]+)(?<!/)$ /$1/ [R=301,L]
+
+<IfModule mod_php7.c>
+  php_flag session.use_trans_sid off
+  php_value default_charset UTF-8
+  php_value mbstring.internal_encoding UTF-8
+  php_value mbstring.func_overload 2
+  #php_value display_errors 1
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+  RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+  RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+</IfModule>
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+	ExpiresActive on
+
+	# Включаем кэширование изображений и флэш на месяц
+	ExpiresByType image/jpeg "access plus 3 day"
+	ExpiresByType image/gif "access plus 3 day"
+	ExpiresByType image/x-icon "access plus 1 month"
+	ExpiresByType image/png "access plus 30 days"
+	ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"
+
+	# Включаем кэширование css, javascript и текстовых файлоф на одну неделю
+	ExpiresByType text/css "access plus 604800 seconds"
+	ExpiresByType text/javascript "access plus 604800 seconds"
+	ExpiresByType application/javascript "access plus 604800 seconds"
+	ExpiresByType application/x-javascript "access plus 604800 seconds"
+
+	# Включаем кэширование html и htm файлов на один день
+	ExpiresByType text/html "access plus 43200 seconds"
+
+	# Включаем кэширование xml файлов на десять минут
+	ExpiresByType application/xhtml+xml "access plus 600 seconds"
+
+	# Нестандартные шрифты сайта
+	ExpiresByType application/x-font-ttf "access plus 1 month"
+	ExpiresByType font/opentype "access plus 1 month"
+	ExpiresByType application/x-font-woff "access plus 1 month"
+	ExpiresByType image/svg+xml "access plus 1 month"
+	ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
+</IfModule>
+
+
+Redirect 301 /catalog/ograzhdeniya/profnastil/ /catalog/ograzhdeniya/zabory-iz-profnastila/
+
+
+<Files "comments.txt">
+Deny from all
+</Files>
+
+
+
+Redirect 301 /catalog/krovelnye-aksessuary/ /catalog/

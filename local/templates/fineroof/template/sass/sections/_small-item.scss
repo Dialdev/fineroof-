@@ -1,0 +1,38 @@
+.small-item {
+  background: white;
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &__img {
+    width: 202px;
+    height: 103px;
+
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: content-box;
+
+    padding-top: 24px;
+    padding-bottom: 53px;
+
+  }
+  &__text {
+    color: #222222;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1.65px;
+    text-transform: uppercase;
+
+    position: absolute;
+    bottom: -23px;
+
+    z-index: 2;
+  }
+}

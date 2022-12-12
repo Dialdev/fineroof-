@@ -1,0 +1,1 @@
+<? $filesInfo = array("/local/templates/.default/components/bitrix/search.page/search-page/style.css" => "1580393533955",); ?>
